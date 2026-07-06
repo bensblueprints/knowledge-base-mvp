@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-zinc-950 text-zinc-200 antialiased;
+}
+
+.input {
+  @apply w-full rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-2 text-sm text-zinc-100 outline-none transition placeholder:text-zinc-600 focus:border-indigo-500;
+}
+
+.btn {
+  @apply inline-flex cursor-pointer items-center gap-1.5 rounded-lg border border-zinc-800 bg-zinc-900 px-3 py-1.5 text-sm text-zinc-200 transition hover:border-zinc-600 hover:text-white;
+}
+
+.btn-primary {
+  @apply border-indigo-600 bg-indigo-600 text-white hover:border-indigo-500 hover:bg-indigo-500;
+}
+
+.btn-danger {
+  @apply hover:border-red-600 hover:text-red-400;
+}
+
+/* markdown preview (mirrors the public article styles) */
+.preview {
+  @apply text-[15px] leading-relaxed text-zinc-300;
+}
+.preview h1 { @apply mt-2 mb-3 text-2xl font-bold tracking-tight text-white; }
+.preview h2 { @apply mt-7 mb-2.5 text-xl font-semibold text-white; }
+.preview h3 { @apply mt-5 mb-2 text-base font-semibold text-white; }
+.preview p { @apply my-3; }
+.preview ul { @apply my-3 ml-6 list-disc; }
+.preview ol { @apply my-3 ml-6 list-decimal; }
+.preview li { @apply my-1; }
+.preview code { @apply rounded border border-zinc-800 bg-zinc-900 px-1.5 py-0.5 font-mono text-[13px] text-zinc-100; }
+.preview pre { @apply my-4 overflow-x-auto rounded-xl border border-zinc-800 bg-zinc-900/80 p-4; }
+.preview pre code { @apply border-0 bg-transparent p-0; }
+.preview blockquote { @apply my-3 rounded-r-lg border-l-2 border-indigo-500 bg-zinc-900/60 px-4 py-1 text-zinc-400; }
+.preview a { @apply text-indigo-400 hover:underline; }
+.preview img { @apply max-w-full rounded-xl border border-zinc-800; }
+.preview table { @apply my-4 w-full border-collapse text-sm; }
+.preview th, .preview td { @apply border border-zinc-800 px-3 py-2 text-left; }
+.preview th { @apply bg-zinc-900 text-white; }
+.preview hr { @apply my-6 border-zinc-800; }
+.preview .anchor { @apply ml-2 text-sm text-zinc-600 no-underline opacity-0; }
+.preview h1:hover .anchor, .preview h2:hover .anchor, .preview h3:hover .anchor { @apply opacity-100; }

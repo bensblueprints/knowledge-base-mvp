@@ -1,0 +1,15 @@
+services:
+  docwell:
+    build: .
+    ports:
+      - '5313:5313'
+    environment:
+      - PORT=5313
+      - ADMIN_PASSWORD=${ADMIN_PASSWORD:-change-me}
+      - DATA_DIR=/data
+    volumes:
+      - docwell-data:/data
+    restart: unless-stopped
+
+volumes:
+  docwell-data:
