@@ -100,3 +100,7 @@ Boots a real server on a temp database and verifies: auth, content CRUD, markdow
 ## 📄 License
 
 MIT © 2026 Ben ([bensblueprints](https://github.com/bensblueprints))
+
+## macOS build
+
+See [MAC-BUILD.md](MAC-BUILD.md). Quickest path: GitHub **Actions** tab -> run the **Mac Build** (`mac-build.yml`) workflow to get a downloadable `.dmg` (unsigned - right-click -> Open on first launch).
