@@ -1,5 +1,9 @@
 # 📚 Docwell — Self-Hosted Knowledge Base & Help Center
 
+## Demo
+
+VIDEO-PLACEHOLDER
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Pay once. Own it forever. No subscription.**
